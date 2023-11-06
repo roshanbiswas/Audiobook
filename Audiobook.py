@@ -5,7 +5,7 @@ import os
 import time
 
 # Function to extract text from a PDF file
-def extract_from_pdf(file_path):
+def extract_from_pdf(file_path : str):
     with open(file_path, 'rb') as file:
         pdf_reader = PyPDF2.PdfReader(file)
         text = ""
@@ -14,12 +14,12 @@ def extract_from_pdf(file_path):
     return text
 
 # Function to extract text from a TXT file
-def extract_from_txt(file_path):
+def extract_from_txt(file_path: str):
     with open(file_path, 'r') as file:
         return file.read()
 
 # function to detect file type and extract text accordingly
-def extract_text(file_path):
+def extract_text(file_path: str):
     _, file_extension = os.path.splitext(file_path)
     if file_extension == ".pdf":
         return extract_from_pdf(file_path)
@@ -28,7 +28,7 @@ def extract_text(file_path):
     else:
         return "Unsupported file type."
 
-def convert_text_to_speech(text, rate=250):
+def convert_text_to_speech(text : str, rate : int = 250):
     # Initialize the speech engine
     speak = pyttsx3.init()
     speak.setProperty('rate', rate)
