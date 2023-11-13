@@ -3,9 +3,18 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - black=23.3.0
   - bzip2=1.0.8
-  - ca-certificates=2023.7.22
+  - ca-certificates=2023.08.22
+  - cffi=1.15.1
+  - cfgv=3.4.0
+  - click=8.1.7
+  - colorama=0.4.6
+  - distlib=0.3.6
   - ebooklib=0.17
+  - filelock=3.9.0
+  - flake8=6.0.0
+  - identify=2.5.5
   - libexpat=2.5.0
   - libffi=3.4.2
   - libiconv=1.17
@@ -14,23 +23,38 @@ dependencies:
   - libxslt=1.1.37
   - libzlib=1.2.13
   - lxml=4.9.3
+  - mccabe=0.7.0
+  - mypy_extensions=1.0.0
+  - nodeenv=1.7.0
   - openssl=3.1.3
+  - packaging=23.1
+  - pathspec=0.10.3
   - pip=23.2.1
+  - platformdirs=2.5.2
+  - pre-commit=3.4.0
+  - pycodestyle=2.10.0
+  - pycparser=2.21
+  - pyflakes=3.0.1
   - pypdf2=2.11.1
   - python=3.11.5
   - python_abi=3.11
+  - pyyaml=6.0.1
   - setuptools=68.2.2
   - six=1.16.0
   - tk=8.6.13
   - tzdata=2023c
   - ucrt=10.0.22621.0
+  - ukkonen=1.0.1
   - vc=14.3
   - vc14_runtime=14.36.32532
+  - virtualenv=20.17.1
   - vs2015_runtime=14.36.32532
   - wheel=0.41.2
   - xz=5.2.6
+  - yaml=0.2.5
   - pip:
     - comtypes==1.2.0
     - pypiwin32==223
     - pyttsx3==2.90
     - pywin32==306
+prefix: C:\Users\rosha\miniconda3\envs\audiobook
