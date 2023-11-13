@@ -57,4 +57,3 @@ dependencies:
     - pypiwin32==223
     - pyttsx3==2.90
     - pywin32==306
-prefix: C:\Users\rosha\miniconda3\envs\audiobook
