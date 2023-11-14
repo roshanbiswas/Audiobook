@@ -2,7 +2,6 @@
 import PyPDF2
 import pyttsx3
 import os
-import time
 
 
 def extract_from_pdf(file_path: str):
@@ -68,7 +67,8 @@ def convert_text_to_speech(text: str, rate: int = 250):
 
 
 def user_interaction():
-    """takes all needed inputs and calls extract_text() and convert_text_to_speech()"""
+    """takes all needed inputs and
+    calls extract_text() and convert_text_to_speech()"""
     # Get file path from user
     file_path = input("Please enter the path to your file: ")
 
