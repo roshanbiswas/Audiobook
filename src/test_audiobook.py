@@ -19,14 +19,14 @@ from Audiobook import (  # noqa
 
 
 def test_extract_from_txt():
-    result = extract_from_txt(r"D:\work\Audiobook\Audiobook\script.txt")
-    expected = open("script.txt", "r")
+    result = extract_from_txt(r"D:\work\Audiobook\Audiobook\data\script.txt")
+    expected = open(r"data\script.txt", "r")
     assert result == expected.read()
 
 
 def test_extract_text():
-    result = extract_text(r"D:\work\Audiobook\Audiobook\script.txt")
-    expected = open("script.txt", "r")
+    result = extract_text(r"D:\work\Audiobook\Audiobook\data\script.txt")
+    expected = open(r"data\script.txt", "r")
     assert result == expected.read()
 
 
