@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
 
     name: Test
-    run-on: windows-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
