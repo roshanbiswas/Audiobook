@@ -2,7 +2,7 @@ name: Test
 
 on:
   push:
-  pull request:
+  pull_request:
     
 jobs:
   run-tests:
@@ -11,7 +11,7 @@ jobs:
 
     name: Test
     run-on: windows-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
